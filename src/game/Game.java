@@ -1,6 +1,8 @@
-import entities.*;
-import exceptions.StrikeConditionNotMetException;
-import exceptions.StrikeFailedException;
+package game;
+
+import game.entities.*;
+import game.exceptions.StrikeConditionNotMetException;
+import game.exceptions.StrikeFailedException;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -44,11 +46,13 @@ public class Game {
                 50f);
         Monster goblin = new Monster("Goblin", 50, 25,
                 100f);
+        Monster goblinB = new Monster(goblin);
         Monster troll = new Monster("Troll", 5, 250,
                 25f);
 
         game.addMonster(skeleton);
         game.addMonster(goblin);
+        game.addMonster(goblinB);
         game.addMonster(troll);
 
         boolean exit = false;
@@ -140,7 +144,6 @@ public class Game {
             if (element.getHealth() <= 0) {
                 if (element instanceof Monster) {
                     this.addToLoot(((Monster) element).getLoot());
-
                 }
 
                 System.out.println(element.getName() + " has been defeated.");

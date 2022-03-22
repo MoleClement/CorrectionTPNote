@@ -1,4 +1,4 @@
-package entities;
+package game.entities;
 
 
 public class Monster extends Entity {
@@ -11,12 +11,18 @@ public class Monster extends Entity {
         this.m_loot = _loot;
     }
 
+    public Monster(Monster _monsterToCopy) {
+        super(_monsterToCopy.getName(), _monsterToCopy.getDamage(), _monsterToCopy.getHealth());
+        this.m_loot = _monsterToCopy.getLoot();
+
+    }
+
     public float getLoot() {
         return this.m_loot;
     }
 
     @Override
     public String toString() {
-        return super.toString() +  " | Loot: " + this.getLoot();
+        return super.toString() + " | Loot: " + this.getLoot();
     }
 }

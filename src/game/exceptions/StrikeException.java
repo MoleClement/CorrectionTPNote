@@ -1,6 +1,6 @@
-package exceptions;
+package game.exceptions;
 
-import entities.Entity;
+import game.entities.Entity;
 
 public abstract class StrikeException extends Exception {
 

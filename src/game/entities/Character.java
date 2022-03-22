@@ -1,4 +1,4 @@
-package entities;
+package game.entities;
 
 
 public abstract class Character extends Entity {

@@ -1,6 +1,6 @@
-package exceptions;
+package game.exceptions;
 
-import entities.Entity;
+import game.entities.Entity;
 
 public class StrikeFailedException extends StrikeException {
     public StrikeFailedException(String message, Entity _entity) {

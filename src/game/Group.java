@@ -1,4 +1,6 @@
-import entities.*;
+package game;
+
+import game.entities.*;
 
 import java.util.ArrayList;
 import java.util.Random;

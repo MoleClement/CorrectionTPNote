@@ -1,7 +1,7 @@
-package entities;
+package game.entities;
 
-import exceptions.StrikeConditionNotMetException;
-import exceptions.StrikeFailedException;
+import game.exceptions.StrikeConditionNotMetException;
+import game.exceptions.StrikeFailedException;
 
 import java.util.Random;
 

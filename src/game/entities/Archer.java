@@ -1,6 +1,6 @@
-package entities;
+package game.entities;
 
-import exceptions.StrikeConditionNotMetException;
+import game.exceptions.StrikeConditionNotMetException;
 
 public class Archer extends Character {
 
